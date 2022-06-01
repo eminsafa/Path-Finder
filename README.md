@@ -32,7 +32,7 @@ This project has 3 main feature:
 
 It is the main approach of this path-finder algorithm. When a node has more than one edge, It duplicates the arrived route as much as edge count.
 <br><br><br>
-<img src="files/images/divide-and-conquer.png" alt="Route Duplication" height="180">
+<img src="files/images/divide-and-conquer.png" alt="Route Duplication">
 <br><br><br>
 
 ##### Route and Path Changes Related to Time
@@ -53,14 +53,14 @@ T       Route       Path (Visited Nodes)
 ### 2. Simplifier
 
 If a node have more than one arrived _route_, it removes all routes but the shortest distance.
-Thus, it prevents the parabolic increase of _route_ objects and increases the performance.
+Thus, it prevents the parabolic rise of number of _route_ objects and increases the performance.
 
 <br><br><br>
-<img src="files/images/simplifier.png" alt="Route Duplication" height="180">
+<img src="files/images/simplifier.png" alt="Route Duplication">
 <br><br><br>
 
 As shown in the graph, at the _Node 5_, _Route #1_ and _Route #3_ arrived. _Route #1_ has been deleted because _Route #3_ travels a shorter distance.
-Another important issue in this section is that Route #1 and Route #3 do not have to reach the _Node 5_ at the same time. Even if they arrive in different time zones, the required Route is deleted.
+Another important issue in this section is that Route #1 and Route #3 do **not have to reach the _Node 5_ at the same time**. Even if they arrive in different time zones, the related Route is deleted.
 
 ##### Route and Path Changes Related to Time
 
@@ -106,7 +106,7 @@ There are two samples under the samples directory.
 Here is the visual of the sample.txt path:
 
 
-<img src="files/images/basic-graph-visual.png" alt="Sample Graph" height="180">
+<img src="files/images/basic-graph-visual.png" alt="Sample Graph">
 
 
 ## License
