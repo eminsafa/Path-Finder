@@ -101,13 +101,22 @@ bash run.sh basic.txt 1 8
 
 ## Sample Graph
 
-There are two samples under the samples directory.
+There are two samples under the `files/sample` directory.
 
-Here is the visual of the sample.txt path:
-
-
+Here is the visual of the network graph that sample.txt represent:
+<br><br><br>
 <img src="files/images/basic-graph-visual.png" alt="Sample Graph">
+<br><br><br>
 
+#### Calling Path Finder with Sample Data
+```bash
+bash run.sh file/sample/basic.txt 1 8
+```
+
+#### Solution
+```bash
+26
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
