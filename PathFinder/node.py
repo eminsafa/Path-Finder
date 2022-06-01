@@ -65,4 +65,3 @@ class Node:
             for r in route_to_remove:
                 a = 0
                 self.RS.remove_route(r, f'Node {self.id} Called')
-

@@ -36,13 +36,13 @@ class Container:
     def importer(self, path: str):
         with open(path) as f:
             number_of_nodes = int(f.readline().strip())
-            print(f"Number of Nodes: {number_of_nodes}")
+            #print(f"Number of Nodes: {number_of_nodes}")
             for n in range(number_of_nodes):
                 node_id = int(f.readline().strip())
                 self.create_node(node_id)
             number_of_edges = int(f.readline().strip())
-            print(f"Number of Edges: {number_of_edges}")
+            #print(f"Number of Edges: {number_of_edges}")
             for e in range(number_of_edges):
                 n1, n2, d = self.parse_edge_data(f.readline())
                 self.add_edge(n1, n2, d)
-        print("IMPORT PROCESS COMPLETED")
+        #print("IMPORT PROCESS COMPLETED")
